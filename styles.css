@@ -124,7 +124,7 @@ p {
   flex-wrap: wrap;
 }
 
-.options-layout > label {
+.options-layout > div > label {
   flex-grow: 1;
   color: hsl(217, 12%, 63%);
 
@@ -180,7 +180,7 @@ input[type="radio"]:checked ~ span {
   cursor: pointer;
 }
 
-label:hover {
+label:hover > span {
   color: white;
 
 }
