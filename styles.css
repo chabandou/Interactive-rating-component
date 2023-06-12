@@ -126,6 +126,8 @@ p {
 
 .options-layout > label {
   flex-grow: 1;
+  color: hsl(217, 12%, 63%);
+
 }
 
 input[type="radio"] {
@@ -139,17 +141,19 @@ input[type="radio"] {
 }
 
 input[type="radio"]:focus {
-  /*no need, if you don't disable default appearance*/
   color: hsl(0, 0%, 100%);
   background-color: hsl(25, 97%, 53%);
   cursor: pointer;
 }
 
 input[type="radio"]:checked {
-  /*no need, if you don't disable default appearance*/
   color: hsl(0, 0%, 100%);
-  background-color: hsl(217, 12%, 63%);
+  background-color: hsl(218, 9%, 57%);
   cursor: pointer;
+}
+
+input[type="radio"]:checked ~ span {
+  color: white;
 }
 
 .form-control {
@@ -161,7 +165,6 @@ input[type="radio"]:checked {
   left: -26px;
   top: -15px;
   font-size: 0.8em;
-  color: hsl(217, 12%, 63%);
 }
 
 #star1 + span {
@@ -175,6 +178,11 @@ input[type="radio"]:checked {
   left: -26px;
   top: -15px;
   cursor: pointer;
+}
+
+label:hover {
+  color: white;
+
 }
 
 label:hover > input[type="radio"] {
